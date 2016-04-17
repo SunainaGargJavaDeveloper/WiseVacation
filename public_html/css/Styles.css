@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 27, 2015, 2:40:05 PM
+    Author     : ANANT
+*/
+
+.media-heading{color:blue;
+  font-family: sans-serif;
+font-style:italic;
+}
+.col-xs-3{ color:blue}
+
+ body{background-color:burlywood}
+ H4{ color:blue ;
+ }
+ 
+ 
+ i{ text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;}
+ th{color:blue}
+ #signin {
+     font-size: small   
+ }
+ .my-error-class {
+    color:#FF0000;  /* red */
+}
+.my-valid-class {
+    color:#00CC00; /* green */
+}
+#status1,#status2,#status3,#status4,#status5,#status6,#status7,#status8,#status9,#adminstatus1,#statusAdminMailFail,#statusAdminMailSuccess {
+    visibility: hidden;
+    color:#FF0000;
+    text-align:center
+}
+
+.best-season-row{
+    color:blueviolet
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Barcelona Tourism</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/temperature.js"></script>
+        <script src="../../js/user.js"></script>
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4  col-sm-4">
+                <H4> <span class='CityTitle'>Barcelona Tourism </span>&#8451)</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="storeCity('Getting_Around');">Add to trip</a></li>
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+    <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-pills">
+            <li><a href="../Amsterdam.html">About</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="restaurants.html">Restaurants</a><li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="airport.html">Airports</a></li>
+            <li  ><a href="whentogo.html">When to go</a></li>
+            <li class="active"><a href="#">Getting Around</a></li>
+            </ul>
+        </div>
+     <div class="row">
+           
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../Barcelona.html">Barcelona</a>>Getting Around 
+     </div> 
+        <br>
+        
+        
+         <div id="main">
+			
+<h2>Getting Around Barcelona</h2>
+	<p>The best way to get around Barcelona is by Metro. A handful of numbered
+            and color-coded lines weave throughout the city, making stops near many
+            of the city's most popular attractions, but unfortunately not at the airport.
+            To travel from Barcelona Airport (BCN), you'll need to catch a taxi, ride a 
+            bus or rent a car. Speaking of city buses, be aware that ever-present traffic
+            jams make commuting via bus rather time-consuming. You could hail taxis on the 
+            street, but if you want to burn a few calories, conduct your tour on foot or by 
+            bike. Driving, however, is not recommended.</p>
+	
+	<div class="info-table transportation-table">
+	<table border="2px" class="transportation-table">
+<tbody>
+<tr class="best-transportation-row">
+<td>
+<p><strong>&nbsp;Metro</strong></p>
+</td>
+<td>
+<p>Diamond-shaped signs wearing an "M" mark the locations of Barcelona's Metro stations.
+    This underground rail system serves much of the city on eight color-coded lines.
+    Tickets are transferable to city buses and trams. There are a variety of ticket 
+    options available and they can be found here. If you're visiting Barcelona for a few 
+    days to a week, the T-10 ticket, which costs €9.80 EUR (or roughly $13 USD), is your 
+    best option. If you're in the city for a month or more, try the T-50/30, which is €39.20
+    EUR (about $52) and offers you 50 trips over 30 days. The metro runs 5 a.m. to midnight
+    Sunday through Thursday and on public holidays, 5 a.m. to 2 a.m. Fridays and evenings
+    before public holidays and nonstop on Saturdays.</p>
+<ul>
+<li>Metro</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Bus</strong></p>
+</td>
+<td>
+<p>The city also operates an extensive bus system, but it's more prone to backups due to 
+    the intense traffic. However, Nitbuses, which run from late night to the early morning,
+    are especially useful to those visitors enjoying the city's nightlife scene. Bus hours 
+    and timetables vary, so be surre to check the website for more information. Several special
+    bus lines — called the Bus Turistic — offer routes that drop passengers at Barcelona's top attractions.</p>
+<ul>
+<li>Bus Turistic</li>
+<li>Bus</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Car</strong></p>
+</td>
+<td>
+<p>Unless you're leaving the city, it's not recommended that you rent a car. Many of the narrow 
+    streets were designed and constructed before the automobile was invented. Traffic jams and 
+    lots of congestion are another reality. If you do rent one, you must be at least 21 years of 
+    age with a U.S. state license, as well as an international driver's permit, which can be obtained 
+    here.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Taxi</strong></p>
+</td>
+<td>
+<p>Metered taxis are bountiful. You can hail them off the street (green light means they're free),
+    but keep in mind that daytime taxis are cheaper than nighttime ones. If you're traveling a 
+    lengthy way at night, you might want to take the Metro or Nitbus instead.</p>
+</td>
+</tr>
+</tbody>
+</table>
+	</div>
+	
+		</div>
+      
+        
+        
+        
+    </body>
+</html>
+
+

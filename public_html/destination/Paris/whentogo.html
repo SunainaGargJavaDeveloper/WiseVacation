@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Paris When To Go </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/temperature.js"></script>
+        <script src="../../js/user.js"></script>
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4  col-sm-4">
+                <H4> <span class='CityTitle'>Paris Tourism </span>&#8451)</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="storeCity('whentogo');">Add to trip</a></li>
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+        <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-pills">
+            <li><a href="../Paris.html">About</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="restaurants.html">Restaurants</a><li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="airport.html">Airports</a></li>
+            <li  class="active"><a href="#">When to go</a></li>
+            <li><a href="Getting_Around.html">Getting Around</a></li>
+            </ul>
+        </div>
+     <div class="row">
+           
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../Paris.html">Paris</a>>when to go 
+     </div> 
+        <br>
+
+        <p>The best time to visit Paris is from June to August,
+            when the weather is just about <em>parfait</em> (perfect).
+            Average highs are in the mid 70s and there are long days of
+            sunshine. Unfortunately, summer is also the most crowded time 
+            — and the most expensive. For a significant drop in tourism,
+            plan a trip in the fall or spring. To save some money on your
+            flight and hotel, pack your most stylish heavy jacket (this is
+            Paris, after all) and visit in the winter.</p>
+        <div class="row"> 
+        <div class="col-md-6 col-lg-6"> 
+        <h3>Temperature (°F)</h3>
+        <img src="http://static.travel.usnews.com/images/destinations/86/temperature_f_6.jpg" alt="Paris Temperature (°F)">
+        </div>
+        <div class="col-md-6 col-lg-6">
+        <h3>Precipitation(in)</h3>
+        <img src="http://static.travel.usnews.com/images/destinations/86/precipitation_in_6.jpg" alt="Paris Precipitation (in)">
+        </div>    
+        </div>
+            <br>
+
+        <table border>
+            <tbody>
+                <tr class="best-season-row">
+                    <td>
+                        <p><strong>June-August</strong></p>
+                    </td>
+                    <td>
+                        <p>Summertime sees high average temperatures in the 70s, which makes strolling
+                            through the neighborhoods and enjoying your café <em>en plein air</em> 
+                            (outside) an absolute joy. But keep in mind, you'll be wrestling with 
+                            hordes of other tourists for your place in the sun. This is the city's 
+                            high tourism season, and as such, room rates and flight prices tend to go up.</p>
+                        <p><strong>Key Events:</strong></p>
+                        <ul>
+                            <li>Fete de St-Denis (June)</li>
+                            <li>Fete de la Musique (June)</li>
+                            <li>Tour de France (July)</li>
+                            <li>Bastille Day (July)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>September-November</strong></p>
+                    </td>
+                    <td>
+                        <p>Starting in late September, Paris' hotels make moderate rate cuts. Average
+                            temperatures can range from the 40s to the 60s, so pack accordingly.</p>
+                        <p><strong>Key Events:</strong></p>
+                        <ul>
+                            <li>International Ready-to-Wear Fashion Shows (September)</li>
+                            <li>Fete d'Automne (September-December)</li>
+                            <li>Prix de l'Arc de Triomphe (October)</li>
+                            <li>Armistice Day (November)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>December-February</strong></p>
+                    </td>
+                    <td>
+                        <p>Paris' low season sees temperatures that range from freezing to around 40 degrees.
+                            Heavy — yet chic — coats are necessary this time of year. If you dare defy the 
+                            chilly weather, you can save quite a few euro on your hotel and flight.</p>
+                        <p><strong>Key Events:</strong></p>
+                        <ul>
+                            <li>Le Salon Nautique de Paris (December)</li>
+                            <li>Fete de St-Sylvestre (December)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>March-May</strong></p>
+                    </td>
+                    <td>
+                        <p>Along with fall, spring is Paris' other shoulder season, and these months lure travelers with slight price cuts on hotel rooms. Temperatures usually span the 40 to 60 degree range, and afternoon rains are a bit more frequent.</p>
+                        <p><strong>Key Events:</strong></p>
+                        <ul>
+                            <li>Foire du Trone (March)</li>
+                            <li>International Marathon of Paris (April)</li>
+                            <li>VE Day (May)</li>
+                            <li>French Open Tennis Championship (May)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </body>
+</html>

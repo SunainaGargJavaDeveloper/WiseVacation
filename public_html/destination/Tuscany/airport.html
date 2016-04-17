@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Tuscany Airports</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+         <script src="../../js/user.js"></script>
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4  col-sm-4">
+                <h4>Tuscany Tourism</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="storeCity('airport');">Add to trip</a></li>
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+
+
+        <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-tabs">
+                <li><a href="../Tuscany.html">About</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li ><a href="restaurants.html">Restaurants</a></li>
+                <li ><a href="hotels.html">Hotels</a></li>
+                <li class="active"><a href="#">Airports</a></li>
+                <li><a href="whentogo.html">When to go</a></li>
+                <li><a href="Getting_Around.html">Getting Around</a></li>
+            </ul>
+        </div>
+          <div class="row">
+
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../Tuscany.html">Tuscany</a>>Airports 
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-lg-4">
+                 <br>
+                <img src="../../Img/Tuscany/tuscany.jpg" alt="Tuscany" style="width:100%;height:200px">
+            </div>
+            <div class="col-md-8 col-lg-8"> 
+                <h2>Pisa International Airport</h2>
+
+    <p>Pisa International Airport, also named Galileo Galilei Airport is an airport located in Pisa, Italy. It is the main airport in Tuscany and the 10th in Italy in terms of passengers.</p>
+    <p>Code: PSA</p>
+    <p>Elevation: 6.562′</p>
+    <p>Phone: +39 050 849111</p>
+    <p>Province: Province of Pisa</p>
+    <h2>Marina di Campo Airport</h2>
+    <p>Marina di Campo Airport is the airport of the Italian island of Elba, located in the area of "La Pila", in Marina di Campo. It is also known as Teseo Tesei Airport.</p>
+    <p>Address: Via dell'Aeroporto Località La Pila, 208, 57034 Marina di Campo LI, Italy</p>
+    <p>Elevation: 102′</p>
+    <p>Code: EBA</p>
+    <p>Province: Province of Livorno</p>
+    <p>Phone: +39 0565 976011</p>
+    <h2>Florence Airport, Peretola</h2>  
+    <p>Florence Airport, Peretola, Italian: Aeroporto di Firenze-Peretola and formally Amerigo Vespucci Airport, is the international airport of Florence, the capital of the Italian region of Tuscany.</p>
+    <p>Code: FLR</p>
+    <p>Elevation: 144′</p>
+    <p>Phone: +39 055 30615</p>
+
+                 </div>
+            <div class="col-md-2 col-lg-2"> </div>
+        </div>
+    </body>
+</html>
+
+ 

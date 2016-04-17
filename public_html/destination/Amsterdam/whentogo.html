@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Amsterdam Tourism</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/temperature.js"></script>
+        <script src="../../js/user.js"></script>
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4  col-sm-4">
+                <H4> <span class='CityTitle'>Amsterdam Tourism </span>&#8451)</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="storeCity('whentogo');">Add to trip</a></li>
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+    <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-pills">
+            <li><a href="../Amsterdam.html">About</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="restaurants.html">Restaurants</a><li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="airport.html">Airports</a></li>
+            <li  class="active"><a href="#">When to go</a></li>
+             <li><a href="Getting_Around.html">Getting Around</a></li>
+            </ul>
+        </div>
+     <div class="row">
+           
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../Amsterdam.html">Amsterdam</a>>when to go 
+     </div> 
+        <br>
+        
+         <p>The best time to visit Amsterdam is between April and May or September and November — right
+         before or directly after the summertime high tourist season. You’ll contend with fewer tourists,
+         you’ll enjoy somewhat mild temperatures (the city's weather is notoriously finicky), and you’ll
+         also experience Amsterdam as the locals do — at its laid-back best. But if it’s a deal you’re
+         after — and you don’t mind temperatures in the 30 to 40 degree range — you should plan a winter
+        vacation; you’ll find lower hotel rates and depleted crowds at the city’s </p>
+        <div class="row"> 
+        <div class="col-md-6 col-lg-6">     
+         <h4>Temperature(°F)</h4>
+         <img alt="Amsterdam Temperature (°C)" src="http://static.travel.usnews.com/images/destinations/101/temperature_c_27.jpg" style="opacity: 1;alignment-adjust: middle">
+        </div>
+        <div class="col-md-6 col-lg-6"> 
+         <h4>Precipitation (in)</h4>
+         <img src="http://static.travel.usnews.com/images/destinations/101/precipitation_in_84.jpg" alt="Amsterdam Precipitation (in)">
+        </div>
+        </div>
+         <br>
+         <br>
+          <table border>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p><strong>June-August</strong></p>
+                        </td>
+                        <td>
+                            <p>With average highs in the low 70s and long sunny days, it takes no leap of the imagination to see why Amsterdam is so popular in the summertime. But along with hospitable weather, Amsterdam fills with tourists packing the popular sites. Hotels are also at a premium and — unless you book far in advance — largely without a vacancy.</p>
+                            <p><strong>Key Events:</strong></p>
+                            <ul>
+                                <li>Amsterdam Gay Pride(August)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="best-season-row">
+                        <td>
+                            <p><strong>September-November</strong></p>
+                        </td>
+                        <td>
+                            <p>Fewer crowds and relatively good weather makes the fall a good season for travel. You might be able to find slight breaks on hotel prices, but you may or may not miss out on the cold weather. Pack layers.</p>
+                            <p><strong>Key Events:</strong></p>
+                            <ul>
+                                <li>Jordaan Festival (September)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><strong>December-March</strong></p>
+                        </td>
+                        <td>
+                            <p>Short, dark and nearly freezing days make winter in Amsterdam pretty unbearable. But this inhospitable time of year — temperatures fluctuate between 30 and 40 degrees Fahrenheit — is also the best time to score deals on airfare and hotel rooms. If you do brave the cold, don't forget a warm coat — and maybe a pair of thermal underwear or two.</p>
+                            <p><strong>Key Events:</strong></p>
+                            <ul>
+                                <li>New Year (December 31)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="best-season-row">
+                        <td>
+                            <p><strong>April-May</strong></p>
+                        </td>
+                        <td>
+                            <p>With temperatures on the rise and tulips in bloom, spring is a nice time to visit.</p>
+                            <p><strong>Key Events:</strong></p>
+                            <ul>
+                                <li>King's Day(April)</li>
+                                <li>Liberation Day (May)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+      
+        
+    </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+--><html>
+    <head>
+        <title>Barcelona Tourism </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/temperature.js"></script>
+         <script src="../../js/user.js"></script>
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4  col-sm-4">
+                <H4> <span class='CityTitle'>Barcelona Tourism </span>&#8451)</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="storeCity('whentogo');">Add to trip</a></li>
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+         <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-pills">
+            <li><a href="../Barcelona.html">About</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="restaurants.html">Restaurants</a><li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="airport.html">Airports</a></li>
+            <li  class="active"><a href="#">When to go</a></li>
+            <li><a href="Getting_Around.html">Getting Around</a></li>
+            </ul>
+        </div>
+     <div class="row">
+           
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../Barcelona.html">Barcelona</a>>when to go 
+     </div> 
+        <br>
+        
+
+            <p>The best time to visit the Barcelona is from May to June when balmy temperatures in the low to mid 70s 
+                mesh with a flurry of festivals that trumpet the advent of summer. The actual summertime is sticky with
+                humidity — locals leave their beloved city in droves to catch a breeze somewhere else. They come back
+                for the fall when the average highs drop back into the 70s.</p>
+        <div class="row"> 
+        <div class="col-md-6 col-lg-6"> 
+        <h3>Temperature (°F)</h3>
+        <img src="http://static.travel.usnews.com/images/destinations/97/temperature_f_11.jpg" alt="Barcelona Temperature (°F)"> 
+        </div>
+        <div class="col-md-6 col-lg-6"> 
+        <h3>Precipitation(in)</h3>
+        <img src="http://static.travel.usnews.com/images/destinations/97/precipitation_in_11.jpg" alt="Barcelona Precipitation (in)">
+        </div>    
+        </div>
+            <br>
+        <table border>
+            <tbody>
+                <tr class="best-season-row">
+                    <td>
+                        <p><strong>May-June</strong></p>
+                    </td>
+                    <td>
+                        <p>This short spring season is the ideal time to visit. Pleasant temperatures in the low to mid 70s are accompanied by several carnivalesque festivals and a somewhat emptied out city. Plus, you'll revel in knowing that you snuck in and enjoyed Barcelona before the summertime tourist rush.</p>
+                        <p><strong>Key Events: &nbsp;</strong></p>
+                        <ul>
+                            <li>Verbena de Sant Joan (June)</li>
+                            <li>Sónar(June)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>July-August</strong></p>
+                    </td>
+                    <td>
+                        <p>Summer constitutes the high tourist season; temperatures, humidity and prices (on everything from airfare to hotels) are also at their highest. And August sees tons of Catalans leaving for month-long vacations in more temperate spots.</p>
+                        <p><strong>Key Events:</strong> &nbsp;</p>
+                        <ul>
+                            <li>El Grec (July)</li>
+                            <li>Festa Major de Gràcia (August)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>September- December</strong></p>
+                    </td>
+                    <td>
+                        <p>The tourist season slows and hotel rates fall a little bit. Average high temperatures are in the 60s and 70s, but October does see some rain.</p>
+                        <p><strong>Key Events: </strong></p>
+                        <ul>
+                            <li>La Diada de Catalunya (September)</li>
+                            <li>La Mercè(September)</li>
+                            <li>Fira de Santa Llúcia (December)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>January-April</strong></p>
+                    </td>
+                    <td>
+                        <p>You'll find some great deals if you travel at this time of year, but it will be a little chilly. Average temperatures range from 40 to 60 degrees Fahrenheit. But then again, you won't experience the hassle of elbowing your way through picture-taking tourists at the Parc Güell or Sagrada Familia.</p>
+                        <p><strong>Key Events: &nbsp;</strong></p>
+                        <ul>
+                            <li>Three Kings Day (January)</li>
+                            <li>Holy Week (March-April)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+   
+</body>
+</html>

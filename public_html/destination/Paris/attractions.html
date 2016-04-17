@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title>Paris Attractions</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/travel.js"></script>
+        <script src="../../js/user.js"></script>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4 col-sm-4">
+                <H4>Paris Tourism</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+
+
+        <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-tabs">
+                <li><a href="../Paris.html">About</a></li>
+                <li class="active"><a href=#>Attractions</a></li>
+                 <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="airport.html">Airports</a></li>
+                <li><a href="whentogo.html">When to go</a></li>
+                <li><a href="Getting_Around.html">Getting Around</a></li>
+            </ul>
+        </div>
+        <div class="row">
+           
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../Paris.html">Paris</a>>attractions 
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+
+                <div id="myCarousel" class="carousel" data-ride="carousel">
+                    <br><br>
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="../../Img/Paris/arc_de_triomphe.jpg" alt="arc_de_triomphe" style="width:100%; height:200px">
+                            <div class="carousel-caption">
+                                <h3>Arc_de_triomphe</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="../../Img/Paris/musee_dorsay.jpg" alt="musee_dorsay" style="width:100%; height:200px">
+                            <div class="carousel-caption">
+                                <h3>Musee Dorsay</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="../../Img/Paris/louvre.jpg" alt="louvre" style="width:100%; height:200px">
+                            <div class="carousel-caption">
+                                <h3>Louvre</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                    </div> 
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <br>
+                <p style="background-color:buttonface;text-align: center"><a href="http://tour-pedia.org/gui/demo/" target="_blank" >View Map</a></p> 
+            </div>     
+
+
+
+            <div class='col-lg-6 col-md-6'> 
+                <table  class="table table-striped text-center progress-striped">
+                    <thead id='attractionTable'  > <tr>   <th class=" text-center"> Attraction name </th></tr>
+                    </thead>
+
+                </table>
+            </div>
+            <div class="col-lg-2 col-md-2"><br><br><p style="font-size:12px ">Paris, France's capital, is a major
+                    European city and a global center for art, fashion, gastronomy and culture. Its picturesque
+                    19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such 
+                    landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is
+                    known for its cafe culture, and designer boutiques along the Rue du Faubourg Saint-Honoré. </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <title>Paris Tourism</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/temperature.js"></script>
+        <script src="../../js/user.js"></script>
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4  col-sm-4">
+                <H4> <span class='CityTitle'>Paris Tourism </span>&#8451)</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="storeCity('Getting_Around');">Add to trip</a></li>
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+    <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-pills">
+            <li><a href="../Amsterdam.html">About</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="restaurants.html">Restaurants</a><li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="airport.html">Airports</a></li>
+            <li  ><a href="whentogo.html">When to go</a></li>
+            <li class="active"><a href="#">Getting Around</a></li>
+            </ul>
+        </div>
+     <div class="row">
+           
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../Paris.html">Paris</a>>Getting Around 
+     </div> 
+        <br>
+        
+         <div id="main">
+			
+<h2>Getting Around Paris</h2>
+	<p>The best way to get around Paris is on foot — the elegant <em>arrondissements</em> are practically made for pedestrians.
+            Still, Paris is very big, so you should take the efficient metro system (<em>Métropolitain</em>) to travel long distances.
+            The <em>Régie Autonome des Transports Parisiens </em>or RATP system, which runs the métro, also offers several bus routes
+            around the city. Those traveling to Paris via air can arrive at Charles de Gaulle Airport (CDG), about 15 miles northeast
+            of the city center, or Paris Orly Airport (ORY), about 12 miles south of the city. Buses, RER trains and the RoissyBus
+            service CDG airport, while the ORLYVAL shuttle train links Orly airport to a RER suburban train stop that travelers can
+            take into the city or to transfer to the métro. Taxis are another option, but can be quite costly averaging anywhere from
+            <span class="st">€</span>30 to <span class="st">€</span>50 EUR ($40 to $70 USD); driving is not recommended.</p>
+        <p>If you're traveling from other French or European cities, you might find that the train is the cheapest way to get to
+            Paris. TGV high-speed trains run throughout France and you can travel between other European countries on SCNF rail.
+            The city has six main train stations, all of which also act as bus stops and métro stations, so you'll be able to get
+            from the station to your hotel quite easily. You can also take the Channel Tunnel (aka the "chunnel") underwater rail
+            service via Eurostar from London.</p>
+	
+	
+	<div class="info-table transportation-table">
+	<table border="2px" class="transportation-table">
+<tbody>
+<tr class="best-transportation-row">
+<td><strong>On Foot</strong></td>
+<td>
+<p>Because most travelers tend to book hotels in the attraction-heavy city center, walking is the best mode of transportation.
+    However, if your home base is a little farther out, you might want to rely on the métro for fairly cheap, but quick and
+    efficient travel.</p>
+</td>
+</tr>
+<tr class="best-transportation-row">
+<td><strong>Métro</strong></td>
+<td>
+<p>The métro, part of the city's RATP public transportation system, is easily accessible, cost-effective and runs 14 extensive
+    routes (identified by numbers 1 to 14) throughout metropolitan Paris. You can purchase single tickets, but aParis Visite travel 
+    card is likely your best option. Available in one-, two-, three- or five-day increments, the card allows you transportation via
+    métro and the <em>Réseau Express Régional</em> (RER) suburban trains, as well as on a number of other means of transportation.
+    Cards cost anywhere from €6 to €65 EUR (around $8 to $90 USD) depending on your age, the number of days you need and the number 
+    of covered zones you'd like to travel within; the majority of the city's top attractions fall in Zone 1. Meanwhile, single
+    one-way t+ tickets for travel on the métro cost €1.70 EUR (about $2.30 USD) while a book of 10 tickets costs €13.70 EUR 
+    (around $18.50 USD). One-day Mobilis passes are also available for €6.80 EUR (about $9.25 USD) for travel within Zones 1 
+    and 2; weekly passes cost €20.40 EUR (about $28 USD) plus a €5 fee for the rechargeable card. You can buy tickets in métro
+    stations and Paris tourist information centers located around the city. The metro runs from around 5:30 a.m. to 12:30 a.m.
+    Sunday through Thursday, with extended hours until about 2 a.m. on Fridays and Saturdays. Be sure to check the métro's specific
+    timetables before traveling. The RATP also has a handy route planner available on its website to help travelers navigate the city.</p>
+<ul>
+<li>RATP</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Train</strong></td>
+<td>
+<p>The<em> Réseau Express Régional</em> (RER) trains operate five express routes (identified by letters A through E) from the Paris
+    city center to surrounding suburbs. RER trains service both Paris airports and take travelers into the heart of the city. The
+    best way to get to Versailles Palace is via the RER C train, unless you want to take a pricey taxi or drive. You may also use
+    the RER trains to explore smaller towns and sites outside the city, including Disneyland Paris. Paris Visite cards cover travel
+    on RER trains; metro day or week passes also can be used on RER train travel within Zone 1. Tickets can be purchased at any RER
+    or métro station. vary widely in price.</p>
+<ul>
+<li>Paris by Train</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Bus</strong></td>
+<td>
+<p>RATP operates more than 325 bus lines that run throughout Paris and its suburbs. You can use a Paris Visite card, &nbsp;t+ ticket,
+    day pass or week pass to pay for bus trips — a ride costs the same as a métro ride unless you buy your ticket on the bus, which
+    then costs €1.90 EUR (about $2.50 USD). While the bus system is slower than the&nbsp;métro, it offers more scenic routes and
+    maintains a longer schedule. The Noctilien night bus system is particularly helpful once the&nbsp;métro closes.</p>
+<ul>
+<li>RATP</li>
+<li>Noctilien night bus</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Taxi</strong></td>
+<td>
+<p>Metered taxis are available but can be scarce in peak times. The Parisian fleet is&nbsp;limited by a lobby at 15,000. If you 
+    are lucky enough to find one that reads<em> </em>"<em>libre</em>" (or free) on top, take note of a few details: The meter 
+    starts at €2.30 EUR (around $3 USD) and charges by kilometer traveled. (One kilometer is equal to about ¾ of a mile.) You
+    should also know that from 5 p.m. to 10 a.m., you'll pay about €1.30 EUR more per kilometer than from 10 a.m. to 5 p.m.</p>
+</td>
+</tr>
+<tr>
+<td><strong>Car</strong></td>
+<td>
+<p>Driving in Paris is to be avoided, unless you plan to explore a good amount outside of the city's bounds. The usual culprits
+    apply — heavy traffic, potentially confusing road signs, scarce parking — making driving a nightmare. That said, rental cars,
+    or "car hires" as they're called, are available at the airports and several of the main train stations.</p>
+<ul>
+<li>Avis</li>
+<li>Europcar</li>
+<li>Hertz</li>
+<li>Sixt</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+	</div>
+	
+		</div>
+      
+        
+        
+        
+    </body>
+</html>
+
+

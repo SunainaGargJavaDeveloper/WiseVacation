@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Dubai Tourism</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/temperature.js"></script>
+        <script src="../../js/user.js"></script>
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4  col-sm-4">
+                <H4> <span class='CityTitle'>Dubai Tourism </span>&#8451)</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="storeCity('whentogo');">Add to trip</a></li>
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+        <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-pills">
+                <li><a href="../Dubai.html">About</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="restaurants.html">Restaurants</a><li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="airport.html">Airports</a></li>
+                <li  class="active"><a href="#">When to go</a></li>
+                <li><a href="Getting_Around.html">Getting Around</a></li>
+            </ul>
+        </div>
+        <div class="row">
+
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../Dubai.html">Dubai</a>>when to go 
+        </div> 
+        <br>
+
+
+
+        <p>The best time to visit Dubai is from October to April. Weather-wise,
+            Dubai really only experiences two seasons: hot and hotter. During
+            the winter months, the city sees blue skies and primo beach weather.
+            However, this is also peak tourist season, so expect plenty of company 
+            on Jumeirah Beach. You can escape the crowds if you visit during the summer
+            months, but be prepared for triple-digit temps and high humidity levels.</p>
+        <div class="row"> 
+            <div class="col-md-6 col-lg-6"> 
+                <h3>Temperature(°F)</h3>
+                <img src="http://static.travel.usnews.com/images/destinations/305/temperature_f_44.jpg" alt="Dubai Temperature (°F)">
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <h3>Precipitation(in)</h3>
+                <img src="http://static.travel.usnews.com/images/destinations/305/precipitation_in_49.jpg" alt="Dubai Precipitation (in)">
+            </div>
+        </div>
+        <br>
+
+        <table border>
+            <tbody>
+                <tr class="best-season-row">
+                    <td><strong>October-April</strong></td>
+                    <td>
+                        <p>Daily highs range from the upper 70s to the low 90s, making Dubai's winter season
+                            the perfect time to sprawl out along the Persian Gulf's pearly white sands. But you
+                            won't be alone: Sun-seekers from around the globe flock to Dubai to take advantage of
+                            the emirate's desirable weather, so you should plan on making hotel reservations at least 
+                            three months in advance to ensure availability. Beach bums should also note that this is
+                            Dubai's rainy season. You can expect a few drops here and there, but showers are short-lived.</p>
+                        <p><strong>Key Events:</strong></p>
+                        <ul>
+                            <li>Camel Racing (October-April)</li>
+                            <li>Islamic New Year (November)</li>
+                            <li>Dubai International Film Festival (December)</li>
+                            <li>Dubai Shopping Festival (January-February)</li>
+                            <li>Dubai International Jazz Festival (February)</li>
+                            <li>Dubai Duty Free Tennis Championships (February-March)</li>
+                            <li> Dubai World Cup (March)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>May-September</strong></td>
+                    <td>
+                        <p>It shouldn't surprise you that Dubai bids adieu to its tourists during the summer months.
+                            During this time of year, temperatures rarely drop below 100 degrees Fahrenheit,
+                            and although rainfall is scarce, humidity levels often rest around 90 percent or higher.
+                            Weather like this makes any outdoor activity—including a day at the beach—unbearable.
+                            To protect yourself from heat stroke, avoid spending too much time outside 
+                            (especially at mid-day), wear plenty of sunscreen, and drink lots of water.
+                            The good news is that you won't have to worry about finding a spare hotel room. 
+                            Prices will generally be lower than they are during the high season, but not by a significant amount.</p>
+                        <p><strong>Key Events:</strong></p>
+                        <ul>
+                            <li>Dubai      Summer Surprises (June-August)</li>
+                            <li> Ramadan (July-August)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>

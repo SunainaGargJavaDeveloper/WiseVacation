@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Tuscany Tourism</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/temperature.js"></script>
+        <script src="../../js/user.js"></script>
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4  col-sm-4">
+                <H4> <span class='CityTitle'>Tuscany Tourism </span>&#8451)</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="storeCity('Getting_Around');">Add to trip</a></li>
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+    <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-pills">
+            <li><a href="../Amsterdam.html">About</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="restaurants.html">Restaurants</a><li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="airport.html">Airports</a></li>
+            <li  ><a href="whentogo.html">When to go</a></li>
+            <li class="active"><a href="#">Getting Around</a></li>
+            </ul>
+        </div>
+     <div class="row">
+           
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../Tuscany.html">Tuscany</a>>Getting Around 
+     </div> 
+        <br>
+         <div id="main">
+			
+<h2>Getting Around Tuscany</h2>
+	<p>The best way to get around Tuscany is by car - this gives you the freedom to explore all the towns nearby and yummy 
+            restaurants in the country.&nbsp;You'll want to get out and explore the region so you can really get a feel for it
+            and appreciate its charm and beauty. If you can't drive a stick shift, make sure to request an automatic because most
+            Italians drive stick. If you think gas is expensive in the U.S., just wait til you get a load of the prices in Europe
+            - you may think it's cheap until you realize it's being sold by the litre, not the gallon.</p>
+        <p>There are many toll and free highways - and the road conditions are generally pretty good, so you shouldn't have
+            too much trouble. Driving is on the right - which you might not expect if you've been driving around any other 
+            parts of Europe. </p>
+        <p>There is also&nbsp;public transportation in the form of buses and trains. Buses are usually the better option - there are 
+            a number of lines that go between the smaller towns and cities. Sometimes it can be tough for non-native speakers to get
+            information, but it's worth the hassle.</p>
+        <p>You can bike around Tuscany, too. There are biking tours or you can rent a bike on your own and find routes in and around the city. </p>
+        <p>Also, boats and ferries are a way to get around the area. If you want to explore the islands from the mainland, this is the only 
+            way to get around.</p>
+        		
+	</div>
+      
+        
+        
+        
+    </body>
+</html>
+

@@ -1,0 +1,51 @@
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SaveSearch-WiseVacation</title>
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+        <link href="css/Styles.css" rel="stylesheet">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/saveS.js"></script>
+       
+    </head>
+    <body >
+        <div class="row" style="background-color:red">
+            <div class="col-md-10 col-lg-10 col-sm-10 col-xs-10">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+        <div class="row">
+           
+                &nbsp&nbsp&nbsp&nbsp<a href="index.html">home</a>>Your saved Search 
+        </div>
+        <h4 style="text-align:center "> Saved search</h4>
+        <div id='savedSearch'>
+        </div>
+    </body>

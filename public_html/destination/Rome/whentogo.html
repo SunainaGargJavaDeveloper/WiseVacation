@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Rome Tourism </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/temperature.js"></script>
+        <script src="../../js/user.js"></script>
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4  col-sm-4">
+                <H4> <span class='CityTitle'>Rome Tourism </span>&#8451)</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="storeCity('whentogo');">Add to trip</a></li>
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+        <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-pills">
+                <li><a href="../Rome.html">About</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="restaurants.html">Restaurants</a><li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="airport.html">Airports</a></li>
+                <li  class="active"><a href="#">When to go</a></li>
+                <li><a href="Getting_Around.html">Getting Around</a></li>
+            </ul>
+        </div>
+        <div class="row">
+
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../Rome.html">Rome</a>>when to go 
+        </div> 
+        <br>
+
+        <p>The best time to visit Rome is from October to April when most 
+            of the tourist crowds have dissipated and room rates are lower.
+            Although you’ll need a warm coat, weather this time of year hardly 
+            ever dips below freezing. For warmer weather — without throngs of
+            tourists and the sweltering humidity — come in May or September.
+            High average temperatures flit between the mid-70s and the lower 80s.</p>
+        <div class="row"> 
+            <div class="col-md-6 col-lg-6"> 
+                <h3>Temperature (°F)</h3>
+                <img src="http://static.travel.usnews.com/images/destinations/108/temperature_f_97.jpg" alt="Rome Temperature (°F)">
+            </div>
+            <div class="col-md-6 col-lg-6">
+
+                <h3>Precipitation(in)</h3>
+                <img src="http://static.travel.usnews.com/images/destinations/108/precipitation_in_51.jpg" alt="Rome Precipitation (in)">
+
+            </div>    
+        </div>
+        <br>
+
+        <table border>
+            <tbody>
+                <tr class="best-season-row">
+                    <td>
+                        <p><strong>October-April</strong></p>
+                    </td>
+                    <td>
+                        <p>This time of year sees an emptied out city and slashed room rates — with the
+                            exceptions of Christmas in December and Easter in March or April. In January,
+                            historically Rome's coldest months, average temperatures range between the mid-30s
+                            and low 50s Fahrenheit.</p>
+                        <p><strong>Key Events: </strong></p>
+                        <ul>
+                            <li>Piazza Navona Christmas Market (November-January)</li>
+                            <li>Christmas Blessing of the Pope (December)</li>
+                            <li>Rome Marathon (March)</li>
+                            <li>Holy Week and Easter (April)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>May</strong></p>
+                    </td>
+                    <td>
+                        <p>May is the calm before the summertime tourist storm. This shoulder month 
+                            lures travelers with its hospitable temperatures, ranging between the low
+                            50s and the mid-70s. You probably won't be able to find hotel deals, but
+                            you'll have a much better chance of finding a room in your accommodation choice.</p>
+                        <p><strong>Key Events:</strong></p>
+                        <ul>
+                            <li>International Horse Show (May)</li>
+                            <li>International Literature Festival (May-June)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>June-August</strong></p>
+                    </td>
+                    <td>
+                        <p>Summertime is peak season. The city brims with tourists, the weather is hot and humid with average highs in the upper 80s, and hotel rates spike. If you do decide to travel here at this time, make your hotel reservation at least six months in advance.</p>
+                        <p><strong>Key Events:</strong></p>
+                        <ul>
+                            <li>Cosmophonies (June-July)</li>
+                            <li>Festa di Noantri (July)</li>
+                            <li>Rock in Roma (July)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>September</strong></p>
+                    </td>
+                    <td>
+                        <p>Peak tourist season is ending, leaving in its wake comfortable temperatures
+                            and smaller lines at top attractions like thePantheon and the Roman Forum.</p>
+                        <p><strong>Key Events:</strong></p>
+                        <ul>
+                            <li>White Night of Rome (September)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>

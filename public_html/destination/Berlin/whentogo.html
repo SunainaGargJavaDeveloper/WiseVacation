@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <title>Berlin Tourism </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/temperature.js"></script>
+        <script src="../../js/user.js"></script>
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4  col-sm-4">
+                <H4> <span class='CityTitle'>Berlin Tourism </span>&#8451)</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="storeCity('whentogo');">Add to trip</a></li>
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+        <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-pills">
+                <li><a href="../Berlin.html">About</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="restaurants.html">Restaurants</a><li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="airport.html">Airports</a></li>
+                <li  class="active"><a href="#">When to go</a></li>
+                 <li><a href="Getting_Around.html">Getting Around</a></li>
+            </ul>
+        </div>
+        <div class="row">
+
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../Berlin.html">Berlin</a>>when to go 
+        </div> 
+        <br>
+
+        <p>The best time to visit Berlin is May through September when the weather is 
+            ideal for café sitting, park lazing and leisurely city strolling. Winter,
+            on the other hand, is freezing <em>literally</em>: Temperatures tend to
+            range in the 20- to 30-degree Fahrenheit range. However, this might be
+            the best time for budget travelers to score deals on airfare and hotel rates.</p>
+        <div class="row"> 
+            <div class="col-md-6 col-lg-6"> 
+                <h3>Temperature (°F)</h3>
+                <img src="http://static.travel.usnews.com/images/destinations/98/temperature_f_20.jpg" alt="Berlin Temperature (°F)">
+            </div>
+            <div class="col-md-6 col-lg-6"> 
+                <h3>Precipitation(in)</h3>
+                <img src="http://static.travel.usnews.com/images/destinations/98/precipitation_in_84.jpg" alt="Berlin Precipitation (in)">
+            </div>
+        </div>
+        <br>
+        <table border>
+            <tbody>
+                <tr class="best-season-row">
+                    <td><strong>May-September </strong></td>
+                    <td>
+                        <p>Average highs peak in the mid-70s Fahrenheit during this time of year, making 
+                            the months between May and September ideal for outdoor pastimes. Sipping German
+                            brew in a biergarten along the River Spree, picnicking in the Tiergarten or Viktoriapark
+                            and loitering in a West Berlin café are just a few of the activities you can join the locals 
+                            in during this temperate season. Accommodations book up quickly, so make your reservation well in advance.</p>
+                        <p><strong>Key Events: </strong></p>
+                        <ul>
+                            <li>Carnival of Cultures (June)</li>
+                            <li>Beer Festival (August)</li>
+                            <li>Berlin Marathon (September)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>October-December</strong></p>
+                    </td>
+                    <td>
+                        <p>Plummeting temperatures (that range from the 30s to the 50s) make this an overlooked time of year.
+                            But if you book early, you may be able to find some deals.</p>
+                        <p><strong>Key Events: </strong></p>
+                        <ul>
+                            <li>Christmas Markets (December)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>January-April</strong></td>
+                    <td>
+                        <p>Berlin is bone-chilling in the winter, and the city's slate gray skies don't do much to warm the spirit.
+                            Still, you might be able to save some significant money by booking in the winter -- just don't forget a
+                            warm coat. <br> <strong>&nbsp;</strong></p>
+                        <p><strong>Key Events:</strong><em> </em></p>
+                        <ul>
+                            <li>Silvester in Berlin (January)</li>
+                            <li>Berlin International Film Festival (February)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </body>
+</html>
+

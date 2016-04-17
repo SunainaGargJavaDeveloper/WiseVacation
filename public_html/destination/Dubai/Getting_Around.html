@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Dubai Tourism</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/temperature.js"></script>
+        <script src="../../js/user.js"></script>
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4  col-sm-4">
+                <H4> <span class='CityTitle'>Dubai Tourism </span>&#8451)</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="storeCity('Getting_Around');">Add to trip</a></li>
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+    <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-pills">
+            <li><a href="../Amsterdam.html">About</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="restaurants.html">Restaurants</a><li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="airport.html">Airports</a></li>
+            <li  ><a href="whentogo.html">When to go</a></li>
+            <li class="active"><a href="#">Getting Around</a></li>
+            </ul>
+        </div>
+     <div class="row">
+           
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../Dubai.html">Dubai</a>>Getting Around 
+     </div> 
+        <br>
+        
+          <div id="main">
+			
+<h2>Getting Around Dubai</h2>
+	<p>The best way to get around Dubai is by taxi or by metro. Although prices are high here, taxis are 
+            relatively inexpensive and provide the freedom to move at your own pace without the hassle of 
+            navigating traffic. Dubai's metro system is currently undergoing expansion, but the existing
+            lines transport passengers to major areas of interest, including the Dubai International Airport 
+            (DXB). DXB is just five miles from the city center. You can also rent a car at the airport, but 
+            driving here is not for the faint-of heart.</p>
+	
+	
+	<div class="info-table transportation-table">
+	<table border="2px">
+<tbody>
+<tr class="best-transportation-row">
+<td><strong>Taxi</strong></td>
+<td>
+<p>Taxis are the most cost- and time-efficient means of getting around Dubai. You can easily spot cabs by their
+    tan bodies and red roofs; the pink-topped cabs are designated for female passengers only (they are also driven
+    by women). All taxis are metered, with rates starting at 3 AED (roughly $0.80 USD) and increasing by roughly 2
+    AED (around $0.50) per mile. The minimum taxi fare required is 10 AED (just under $3 USD). Because Dubai 
+    addresses do not include building numbers, you'll have to specify your destination based on an intersection
+    or a nearby hotel. Taxis also service Dubai International Airport (DXB) for a flat rate of 20 AED (roughly 
+    $5.50 USD).</p>
+<ul>
+<li> Dubai Taxi Corporation</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Bus</strong></td>
+<td>
+<p>The Roads &amp; Transport Authority (RTA) operates more than 75 routes within Dubai city, as well as 15 inter-emirate routes.
+    Like the metro, bus fares range from 1.80 AED (roughly $0.50 USD) to 5.80 AED (around $1.60 USD), and you can pay 
+    using your Nol Card. You can purchase a Nol Card at select bus stations, ticket vending machines, and RTA service centers
+    throughout the city. Although buses run frequently, you will need to factor traffic delays and frequent stops into
+    your travel time. Also, buses can be somewhat tricky for visitors to navigate; to save yourself time and a headache
+    opt for the metro instead.</p>
+<ul>
+<li> RTA Buses</li>
+</ul>
+</td>
+</tr>
+<tr class="best-transportation-row">
+<td><strong>Metro</strong></td>
+<td>
+<p>Dubai revealed the first of its two metro lines back in 2009, and the system is continuing to expand. The red 
+    line services 29 stations between Rashidiya in the western part of the city and Jebel Ali in the south,
+    stopping in downtown Dubai and at the airport. The green line also stops in downtown Dubai on its way from
+    Al Qusais (just northeast of the airport) to Al Jadaf, a neighborhood located east of downtown along Dubai 
+    Creek. Two more lines are currently in the works. The routes are divided into zones, and fares range from
+    1.80 AED (roughly $0.50 USD) to 5.80 AED (around $1.60 USD) based on distance traveled. If you are planning
+    on using public transport fairly regularly, consider obtaining a Nol Card, which is valid on Dubai's metro,
+    buses, and waterbuses. You can purchase a Nol Card in all metro stations. Trains operate every day from 6 a.m.
+    to midnight or 1 a.m., depending on the day. On Fridays, metro doesn't start service until 1 p.m., and it runs
+    to 1 a.m.</p>
+<ul>
+<li> Dubai Metro</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Boat</strong></td>
+<td>
+<p>Boats have always played a primary role in Dubai transportation, and today, they are still frequently used by both locals and tourists who need to cross Dubai Creek. For 1 AED (roughly $0.25 USD) per trip, you can cross the creek via <em>abra</em>, the traditional wooden boat that has graced Dubai's waters for centuries. You'll find <em>abras</em> lining the creek in the downtown area. There is no set schedule; boats simply leave when they are filled to capacity.</p>
+<p>The Roads &amp; Transport Authority recently launched a new boat service known as the Dubai Waterbus. These are more spacious and high-tech than <em>abras</em> (and provide air conditioning), and they service stations outside of the immediate downtown area. One way trips cost 2 AED (roughly $0.50 USD), and you can pay using your <a href="javascript:void(oel('http://www.nol.ae/RtaPortal/Portal.portal?_nfpb=true&amp;_pageLabel=home_learn_what&amp;lang=en&amp;_nfls=false'))">Nol Card</a>.</p>
+<ul>
+<li>Abras</li>
+<li> Dubai Waterbus</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Car</strong></td>
+<td>Dubai's roads are well maintained and clearly labeled; however, driving etiquette is poor. In fact, traffic
+    accidents are one of the leading causes of death in the UAE. That being said, a car will come in handy should 
+    you want to venture outside of Dubai city. You can rent a car in town or at Dubai International Airport.
+    In order to drive here, you will need to obtain an international driver's license.</td>
+</tr>
+</tbody>
+</table>
+
+	</div>
+	
+		</div>
+      
+        
+        
+        
+    </body>
+</html>
+
+

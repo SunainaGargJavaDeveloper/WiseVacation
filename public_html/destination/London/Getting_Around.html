@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>London Tourism</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/temperature.js"></script>
+        <script src="../../js/user.js"></script>
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4  col-sm-4">
+                <H4> <span class='CityTitle'>London Tourism </span>&#8451)</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="storeCity('Getting_Around');">Add to trip</a></li>
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+    <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-pills">
+            <li><a href="../Amsterdam.html">About</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="restaurants.html">Restaurants</a><li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="airport.html">Airports</a></li>
+            <li  ><a href="whentogo.html">When to go</a></li>
+            <li class="active"><a href="#">Getting Around</a></li>
+            </ul>
+        </div>
+     <div class="row">
+           
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../London.html">London</a>>Getting Around 
+     </div> 
+        <br>
+        
+          <div id="main">
+			
+<h2>Getting Around London</h2>
+	<p>            <em> </em>The best way to get around London is the rapid-transit London Underground, or what locals call "the Tube." You
+            can even take the Tube from Heathrow Airport (LHR) <span>–&nbsp;</span>one of the world's busiest airports
+            <span>–&nbsp;</span>into the city center. This widespread and efficient system stretches throughout London
+            and beyond, and it is relatively easy to navigate. Buying an Oyster card will further simplify your travel since
+            it can be used on the Underground system, as well as on city buses and other forms of transportation. Visitors 
+            should also bring a comfortable pair of walking shoes since<em> </em>meandering is the most atmospheric way to
+            traverse the city.</p>
+	
+	
+	<div class="info-table transportation-table">
+	<table border="2px" class="transportation-table">
+<tbody>
+<tr class="best-transportation-row">
+<td><strong>Tube</strong></td>
+<td>
+<p>The London Underground, otherwise known as "the Tube," is simple to use and has extensive routes throughout the city and into 
+    neighboring counties. Tickets and rechargeable Oyster cards can be purchased at stations; we recommend the pay-as-you-go Oyster
+    card, which will allow you to travel throughout the Underground's nine zones (though the great majority of tourist attractions 
+    are clustered in the first and second zones). Even if you don't plan on using the Tube throughout your entire stay, purchasing
+    an Oyster card (versus a single-fare ticket) will always be cheaper. For instance, a single-fare ticket in Zone 1 is 4.50 pounds
+    (about $6.50), while the Oyster fare is 2.40 pounds (about $3.50). Remember to touch your Oyster card to the yellow readers as
+    you enter the Tube station and as you exit.</p>
+<ul>
+<li>London Underground</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Bus </strong></td>
+<td>
+<p>The allure to traveling by bus is that you get to see the sights. The London Underground is, well, <em>underground</em>, so 
+    you miss out on the city's scenic views. Fares start at&nbsp;<span>1.50 pounds for a single ride, but keep in mind that
+        buses don't take cash at all, so it's best to have a</span><span>&nbsp;topped-up Oyster card to pay for your trip.
+            &nbsp;</span></p>
+<ul>
+<li>London Buses</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Taxi</strong></td>
+<td>
+<p>London's infamous black cabs can be found throughout the city, as well as in designated lines at busy train stations, airports,
+    and hotels. When you're hailing one on the street, keep in mind that a lit-up taxi sign means it's available. Cabs are metered,
+    and the minimum fee is 2.40 pounds (about $3.50). You can pay with cash&nbsp;<span>–&nbsp;</span>or <em>quid</em>, as the Brits
+    say <span>–&nbsp;</span>but many cabs accept credit cards, though there is a surcharge. You can tip as much as you want, but most
+    cab riders tip to the nearest pound. Steer clear of unlicensed cabs, especially ones soliciting you; they're illegal in London
+    and can be dangerous.</p>
+<ul>
+<li>London Black Cabs</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Car</strong></td>
+<td>
+<p>Think twice before "hiring" or renting a car in London. For Americans used to driving on the right side of the road, keep in 
+    mind that Londoners drive on the left. The cars are also usually manual; automatics tend to cost more. In addition, traffic
+    and parking are awful, and petrol (or gas) is high. That said, you can hire cars at the airports or at many locations 
+    throughout central London.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+	</div>
+	
+		</div>
+      
+        
+        
+        
+    </body>
+</html>
+
+

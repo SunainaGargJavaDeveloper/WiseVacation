@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Tuscany Tourism </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/temperature.js"></script>
+        <script src="../../js/user.js"></script>
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4  col-sm-4">
+                <H4> <span class='CityTitle'>Tuscany Tourism </span>&#8451)</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="storeCity('whentogo');">Add to trip</a></li>
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+         <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-pills">
+            <li><a href="../Tuscany.html">About</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="restaurants.html">Restaurants</a><li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="airport.html">Airports</a></li>
+            <li  class="active"><a href="#">When to go</a></li>
+            <li><a href="Getting_Around.html">Getting Around</a></li>
+            </ul>
+        </div>
+     <div class="row">
+           
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../Tuscany.html">Tuscany</a>>when to go 
+     </div> 
+        <br>
+        <p>The best times to visit Tuscany are between late September and 
+            October and between April and May. During these months, travelers
+            will find comfortable temperatures and fewer crowds at the major sights.
+            As expected, summer ushers in high temperatures and heavy crowds. If you 
+            want Tuscany all to yourself, visit during the winter low season, but expect
+            the cold and lots of rain.&nbsp;</p>
+
+        <table border >
+            <tbody>
+                <tr>
+                    <td><strong>June-Early September</strong></td>
+                    <td>
+                        <p>In the summertime, the sun glares down on Tuscany and the warm rays are accompanied 
+                            by average highs in the upper 80s. This is the busiest time for tourism, so Tuscany's
+                            top things to do will be crowded with visitors. You should also keep in mind that many
+                            restaurateurs, hoteliers and shopkeepers go on vacation in August, closing their doors
+                            to tourists.&nbsp;</p>
+                    </td>
+                </tr>
+                <tr class="best-season-row">
+                    <td>
+                        <p><strong>Late September-October</strong></p>
+                    </td>
+                    <td>
+                        <p>The crowds thin and the temperatures drop into the low 70s, making fall an ideal time to
+                            visit the Tuscan region. Just picture Tuscany's rolling hills aflame with changing leaves.
+                            This is also when many vineyards begin harvesting their grapes: Can anyone say, harvest festival?</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>November-March</strong></p>
+                    </td>
+                    <td>
+                        <p>This is Tuscany's low season&nbsp;when average temperatures drop into the 30s at worst and the lower 50s
+                            at best. You also have to watch out for property closures: Many restaurants and hotels tend to close for 
+                            a month or two. But on the flip side, you could steal some pretty sweet deals if you book a winter trip.&nbsp;</p>
+                    </td>
+                </tr>
+                <tr class="best-season-row">
+                    <td>
+                        <p><strong>April-May</strong></p>
+                    </td>
+                    <td>
+                        <p class="NoSpacing">Early spring is another sweet time to visit Tuscany. You'll beat all the summertime visitors
+                            and you'll enjoy kind temperatures in the 70s. Plus, you'll wait in shorter lines at places like Florence's
+                            Uffizi Gallery or Siena's Torre del Mangia (the city's tallest tower).&nbsp;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </body>
+</html>
+

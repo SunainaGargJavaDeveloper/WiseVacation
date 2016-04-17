@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Admin-Wisevacation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+        <link href="../css/Styles.css" rel="stylesheet">
+        <script src="../js/jquery-1.11.2.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/adminform.js"></script>
+
+    </head>      
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div> 
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("admin");
+                                    document.write('Hi,' + str);
+                                </script> <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                   <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div></div>
+        <h4 style="text-align: center">Users list</h4>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <br><br><br><p style="text-align:center"><button class="btn btn-primary" onclick="sMail();" id="btnSendEmail" disabled>Send Email</button>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <input type="checkbox" id="selectAll" name="selectAll" onchange="setCheckBoxes(this)" >select All
+                <table  class='table table-striped text-center progress-striped'>
+                    <thead id='userTable'><tr>   <th class=" text-center"> Users' Email Addresses</th></thead>    
+                </table>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            </div>
+        </div>
+    </body>

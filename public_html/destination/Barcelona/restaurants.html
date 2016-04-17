@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Barcelona Restaurants </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/restaurant.js"></script>
+        <script src="../../js/user.js"></script>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4 col-sm-4">
+                <H4>Barcelona Tourism</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                               
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+
+
+        <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-tabs">
+                <li><a href="../Barcelona.html">About</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li  class="active"><a href="#">Restaurants</a></li>
+                <li ><a href="hotels.html">Hotels</a></li>
+                <li><a href="airport.html">Airports</a></li>
+                <li><a href="whentogo.html">When to go</a></li>
+                <li><a href="Getting_Around.html">Getting Around</a></li>
+            </ul>
+        </div>
+        <div class="row">
+           
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../Barcelona.html">Barcelona</a>>restaurants
+        </div> 
+        <div class="row">
+            <div class="col-md-2 col-lg-2"> <br>
+              <p style="background-color:buttonface;text-align: center"><a href="http://tour-pedia.org/gui/demo/" target="_blank" >View Map</a></p>
+            </div>
+            <div class="col-md-8 col-lg-8"> 
+            <table  class="table table-striped text-center progress-striped" >
+                    <thead id='restaurantTable'  > <tr>   <th class="text-center"> Restaurant Name </th>
+                          <th class="text-center"> Restaurant Address </th></tr>
+                    </thead>
+
+                </table>
+            </div>
+            
+            <div class="col-md-2 col-lg-2"> </div>
+        </div>
+
+    </body>
+</html>

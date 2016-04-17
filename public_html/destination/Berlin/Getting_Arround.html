@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <title>Berlin Tourism</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/temperature.js"></script>
+        <script src="../../js/user.js"></script>
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4  col-sm-4">
+                <H4> <span class='CityTitle'>Berlin Tourism </span>&#8451)</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="storeCity('Getting_Around');">Add to trip</a></li>
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+    <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-pills">
+            <li><a href="../Amsterdam.html">About</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="restaurants.html">Restaurants</a><li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="airport.html">Airports</a></li>
+            <li  ><a href="whentogo.html">When to go</a></li>
+            <li class="active"><a href="#">Getting Around</a></li>
+            </ul>
+        </div>
+     <div class="row">
+           
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../Berlin.html">Berlin</a>>Getting Around 
+     </div> 
+        <br>
+        
+          <div id="main">
+			
+<h2>Getting Around Berlin</h2>
+	       <p>The best way to get around in Berlin is via the U-Bahn underground trains
+            or S-Bahn regional, elevated trains, which are both a part of the city's
+            extensive BVG public transportation system. You can even take the U-Bahn
+            from Berlin-Tegel Airport (TXL), located a mere five miles from the city center.
+            As with every big metropolis, driving is discouraged: heavy traffic and scarce
+            parking are the main culprits. For a bit of exercise, you can also rent a bike 
+            and peddle along the city's bike lanes and through the parks. Metered taxis are
+            abundantly available, and these can be hailed on the street or scheduled ahead of time.</p>
+	<div class="info-table transportation-table">
+	<table border="2px" class="transportation-table">
+<tbody>
+<tr class="best-transportation-row">
+<td>
+<p><strong>U-Bahn &amp; S-Bahn</strong></p>
+</td>
+<td>
+<p>Most tourists will use the U-Bahn to get around. This underground rail system runs on nine colored routes
+    throughout the city and makes more than 170 stops. A ticket is required for riding, and if you're caught
+    on the train without it, you can be fined astronomically. Make sure to also validate your ticket before 
+    boarding. Note the price is variant on a zone system (A, B and C), but most of Berlin's attractions are
+    situated in zones A and B, the cheapest price bracket. <strong>&nbsp;</strong></p>
+<p>You can also take the S-Bahn, which runs a handful of east-to-west and north-to-south lines, as well as a
+    circular line, throughout the city. Fares are very cheap, and trains run about every five minutes during
+    rush hour and about every 20 minutes on nights and weekends.</p>
+<ul>
+<li><strong>BVG</strong></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Bus</strong></p>
+</td>
+<td>
+<p>An efficient bus system can also take you to most places in the city, though it's significantly slower than 
+    the above- or underground trains. A common bus route is Bus Route 100, which departs from the Zoologischer
+    Garten station, drives through Tiergarten park and onto Alexanderplatz, allowing riders to see some of Berlin's
+    most famous landmarks. Buses nos. 216 and 218 are also popular since they travel outside the city to the lake 
+    getaways of Wannsee Beach and <em>Pfaueninsel </em>(or Peacock Island).</p>
+<ul>
+<li>BVG<strong></strong></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Taxi</strong></p>
+</td>
+<td>
+<p>Metered taxis are available throughout Berlin. You can hail one on the street (an illuminated sign means it's free
+    or call one to pick you up (0800-CAB-CALL).</p>
+</td>
+</tr>
+<tr>
+<td><strong>Car</strong></td>
+<td>Cars are not a preferred mode of transportation. Along with many of the world's major cities, Berlin shares a 
+    penchant for traffic congestion and too-few parking spots. Another very unique frustration is the inability to
+    turn left on major thoroughfares; tram lines and other barriers block the way. But if you're set on driving,
+    you can rent cars from American companies at the Berlin-Tegel Airport (TXL).</td>
+</tr>
+</tbody>
+</table>
+	</div>
+	
+		</div>
+      
+        
+        
+        
+    </body>
+</html>
+
+

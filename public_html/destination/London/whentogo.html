@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>London Tourism </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/temperature.js"></script>
+        <script src="../../js/user.js"></script>
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4  col-sm-4">
+                <H4> <span class='CityTitle'>London Tourism </span>&#8451)</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="storeCity('whentogo');">Add to trip</a></li>
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+        <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-pills">
+            <li><a href="../London.html">About</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="restaurants.html">Restaurants</a><li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="airport.html">Airports</a></li>
+            <li  class="active"><a href="#">When to go</a></li>
+            <li><a href="Getting_Around.html">Getting Around</a></li>
+            </ul>
+        </div>
+     <div class="row">
+           
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../London.html">London</a>>when to go 
+     </div> 
+        <br>
+
+        <p>The best time to visit London is in the spring&nbsp;when the temperatures
+            are mild and the city's parks are green and blooming. However, late spring
+            <span>–&nbsp;</span>along with summer <span>–&nbsp;</span>is also prime tourist
+            season, and hotel and flight prices reflect the surge. You're more likely to find 
+            airfare and accommodation deals in the fall and winter&nbsp;though you'll also encounter 
+            chilly temperatures. It's important to note though that December in London is an incredibly 
+            popular place to be during the holidays, so expect the streets to be crowded with both English
+            and international tourists. And no matter when you travel, you should pack an umbrella: London
+            is notorious for experiencing misty days and showers year-round. Another thing to keep in mind
+            : it's nearly impossible to escape crowds in London. Along with being one of the biggest cities
+            in Europe, it is one of the most popular destinations to visit in the world, so no matter what
+            time of year you go, you're bound to run into lots of tourists.</p>
+        <div class="row"> 
+        <div class="col-md-6 col-lg-6"> 
+        <h3>Temperature(°F)</h3>
+        <img src="http://static.travel.usnews.com/images/destinations/82/temperature_f_1.jpg" alt="London Temperature (°F)">
+        </div>
+        <div class="col-md-6 col-lg-6">
+        <h3>Precipitation(in)</h3>
+        <img src="http://static.travel.usnews.com/images/destinations/82/precipitation_in_1.jpg" alt="London Precipitation (in)">
+        </div>    
+        </div>
+            <br>
+
+        <table border >
+            <tbody>
+                <tr class="best-season-row">
+                    <td><strong>March-May</strong></td>
+                    <td>
+                        <p>Peak tourist season in London is pretty much all year-round, but late spring (and summer)
+                            are especially busy. By making your London Town jaunt in late spring, you'll have the 
+                            opportunity to witness the royal parks and gardens blossoming, and hit the city's weather 
+                            sweet spot. However, the earlier you visit in spring, the more likely you'll run into slightly
+                            smaller crowds. While fall and winter can be especially rainy, and summer can get a bit muggy,
+                            spring in London enjoys a happy medium, with average temperatures hovering between the 50s and 60s.</p>
+                        <p><strong>Key Events:</strong></p>
+                        <ul>
+                            <li>St Patrick's Day Festival and Parade (March)</li>
+                            <li><span>Cancer Research UK Boat Races</span>&nbsp;(March)</li>
+                            <li>Virgin Money London Marathon (April)</li>
+                            <li>Museums at Night (May)</li>
+                            <li>RHS&nbsp;Chelsea Flower Show (May)</li>
+                            <li>State Opening of Parliament (May)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>September-November</strong></td>
+                    <td>
+                        <p>London is still crowded with tourists well into mid-September, thanks to the mild 60 to 70-degree&nbsp;
+                            temperatures. The photogenic autumn foliage also doesn't hurt either. If you're looking to really sink
+                            your teeth into the culture, however, this is the best time to visit. These month's annual events, 
+                            especially Guy Fawkes Night, are celebrations deeply rooted in not only London but England's history.</p>
+                        <p><strong>Key Events:</strong></p>
+                        <ul>
+                            <li>Museums at Night (October)</li>
+                            <li>Guy Fawkes Night (November)</li>
+                            <li>The Lord Mayor's Show (November)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>December-February</strong></td>
+                    <td>
+                        <p>If you're looking to save a pound or two, travel during the chilly, winter season
+                            (except for December when rates rise due to the holidays). Though temperatures average
+                            in the 30- to 40-degree range, you'll be able to enjoy a more authentic London experience
+                            sans large tourist hordes. Because the city sparkles with twinkling lights and festive events
+                            during the holiday season, central London is usually overrun with holiday shoppers, especially 
+                            at Oxford Street. If you're in London for the holidays, plan to take in the city's Christmas 
+                            splendour away from popular shopping hot spots.</p>
+                        <p><strong>Key Events:</strong></p>
+                        <ul>
+                            <li>London Parade (First of January)</li>
+                            <li>Pancake Day (February)</li>
+                            <li>London Fashion Week (February)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>June-August</strong></td>
+                    <td>
+                        <p>Fortunately, comfortable summertime temperatures (mid-70s Fahrenheit) make the tourist crowds a
+                            little bearable. Don't leave your shorts home just yet; in recent years, London has experienced 
+                            record highs in the lower 90s. Also, summer affords no relief from rain and subsequent humidity.
+                            Packing an umbrella is a must.</p>
+                        <p><strong>Key Events:</strong></p>
+                        <ul>
+                            <li>Trooping the Colour (June)</li>
+                            <li>London Pride (June)</li>
+                            <li>Wimbledon Championships&nbsp;(June-July)</li>
+                            <li>City of London Festival (June-July)</li>
+                            <li>Notting Hill Carnival (August)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>

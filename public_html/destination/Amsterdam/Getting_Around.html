@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Amsterdam Tourism</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css" />
+        <link href="../../css/Styles.css" rel="stylesheet">
+        <script src="../../js/jquery-1.11.2.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/temperature.js"></script>
+        <script src="../../js/user.js"></script>
+    </head>
+    <body>
+        <div class="row" style="background-color:red">
+            <div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../Img/airport.png" alt="WiseVacation" style="height:50px; width:100px;">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">WiseVacation</h4>        
+                    </div>
+                </div></div>
+            <div class="col-md-4 col-lg-4 col-xs-4  col-sm-4">
+                <H4> <span class='CityTitle'>Amsterdam Tourism </span>&#8451)</h4>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " > 
+                <div id="userArea">
+                    <ul class="nav nav-pills" >   
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <script type="text/javascript">
+                                    var str = sessionStorage.getItem("user");
+                                    if (str !== null) {
+                                        var pos = str.indexOf('@');
+                                        document.write('Hi,' + str.substr(0, pos));
+                                    }
+                                </script>  <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="storeCity('Getting_Around');">Add to trip</a></li>
+                                <li><a href="../../SaveSearch.html" onclick="">Saved Search</a></li>
+                                <li><a href="#" onclick="signout();">SignOut</a></li>
+                            </ul>
+                        </li> </ul></div>
+            </div>
+        </div> 
+    <div class="row" style="background-color:buttonface">
+            <ul class="nav nav-pills">
+            <li><a href="../Amsterdam.html">About</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="restaurants.html">Restaurants</a><li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="airport.html">Airports</a></li>
+            <li><a href="whentogo.html">When to go</a></li>
+            <li class="active"><a href="#">Getting Around</a></li>
+            </ul>
+        </div>
+     <div class="row">
+           
+            &nbsp&nbsp&nbsp&nbsp<a href="../../index.html">home</a>><a href="../Amsterdam.html">Amsterdam</a>>Getting Around 
+     </div> 
+        <br>
+        
+         <div id="main">
+			
+<h2>Getting Around Amsterdam</h2>
+	<p>The best way to get around Amsterdam is by bike. Once you’ve flown into the
+            nearby Amsterdam Airport Schiphol (AMS) and settled into your hotel, we
+            suggest you inquire about getting one. Numerous canals, impatient drivers
+            and narrow roads (ringing the canal belt) make maneuvering the city via
+            car interesting, to say the least. Plus Amsterdam is known for its biking,
+            and you'll find that rental shops canvas the city. Pedaling through an
+            unfamiliar place might not be everyone's schtick; for those travelers,
+            there's also a perfectly respectable public transport system — the
+            GVB — which offers metro, bus and tram service.</p>
+	
+	
+	<div class="info-table transportation-table">
+	<table border="2px">
+<tbody>
+<tr>
+<td>
+<p><strong>Car</strong></p>
+</td>
+<td>
+<p>Getting around Amsterdam by car probably isn't the best method. If you do 
+    decide to drive, frustration and expense will no doubt be your companions.
+    Along with narrow, one-way roads, scarce parking — that's expensive to boot
+    — and multitudes of pedestrians and cyclers on all sides, you also have a
+    disorienting tangle of canals to grapple with. However, if you're planning
+    on seeing other Netherlands destinations, renting a car does make a bit
+    more sense. You can find rental places at the airport as well as a throughout downtown.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Bus</strong></p>
+</td>
+<td>
+<p>Amsterdam's public bus service is operated by GVB. Many of the buses begin their
+    routes at Centraal Station, which is also one of the places where you can buy your
+    <em>OV-chipkaart</em> or GVB ticket. Prices for all GVB public transportation are 
+    allotted by time (1 hour, 24 hours, 48 hours etc.), as well as by time of day.
+    The GVB also operates night buses, but ticket prices for these are more expensive
+    than their daytime counterparts.</p>
+<ul>
+<li>GVB</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Metro</strong></p>
+</td>
+<td>
+<p>Amsterdam also operates a small Metro system, with four numbered lines: 50, 51, 52
+    and 53. Metro trains are mostly used by residents coming in from the suburbs.
+    If you do decide to take the metro train, be sure to validate your ticket on
+    the platform before hopping on.</p>
+<ul>
+<li>GVB Metro</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Tram</strong></p>
+</td>
+<td>
+<p>After walking or biking, the Amsterdam tram is the most scenic way to travel through
+    the city. Sixteen tram routes crisscross the city and 10 of them, lines 1, 2, 4, 5,
+    9, 13, 16, 17 and 26, begin and end service at Centraal Station. Board the tram 
+    toward the rear, and to hop out, hit the button that reads "Deur Open."</p>
+<ul>
+<li>GVB</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Ferry</strong></p>
+</td>
+<td>
+<p>To get across the IJ channel, you can take one of five ferry routes operated by 
+    the GVB. Although you might enjoy a scenic view of the harbor, there's not a
+    ton to do once you reach Amsterdam-Noord (North).</p>
+<ul>
+<li>GVB Ferry</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Taxi and Water Taxi</strong></p>
+</td>
+<td>
+<p>Metered taxis can be hailed on the street, called or picked up at taxi stands.
+    However, in recent years, taxi service has become a little iffy with directionally
+    challenged cabbies, who may or may not speak English. Taxi Centrale Amsterdam tends
+    to offer trustworthy service. Water taxis in Amsterdam are very expensive, but they
+    're also very ambient. If you can afford upward of $100 for a 30-minute ride, you 
+    can hail one outside of Centraal Station.</p>
+<ul>
+<li>Taxi Centrale Amsterdam</li>
+</ul>
+</td>
+</tr>
+<tr class="best-transportation-row">
+<td>
+<p><strong>Bike</strong></p>
+</td>
+<td>
+<p>Biking is the way to travel around Amsterdam. And you'll find that bike shops 
+    — renting thousands upon thousands of bikes — fill the city. This is also an
+    affordable way to get around — though you will have to make a hefty deposit 
+    on your rental (around $100). Rentals cost somewhere around $15 a week to about
+    $50 per week. Plus, you're getting exercise and burning off all those pancake
+    calories. And if you're nervous about traffic, pedal around on Sunday when the city is sleepy.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+	</div>
+	
+		</div>
+        
+        
+        
+    </body>
+</html>
